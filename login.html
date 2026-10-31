@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login / Sign up – Hawklyn Tech</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+<header><div class="wrap bar"><a class="logo" href="index.html"><img src="./images/HT logo.jpeg" alt="Hawklyn Tech"></a>
+<nav aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="courses.html">Courses</a><a href="contact.html">Contact</a><a class="btn" href="login.html" aria-current="page">Login / Sign up</a></nav></div></header>
+<main><div class="page-head"><div class="wrap"><h1>Welcome to Hawklyn Tech</h1></div></div>
+<section><div class="wrap"><div class="auth">
+<div class="tabs" role="tablist"><button role="tab" id="tabLogin" aria-selected="true" type="button">Log in</button><button role="tab" id="tabSignup" aria-selected="false" type="button">Sign up</button></div>
+<form id="loginForm" novalidate><label>Email <input type="email" name="email" required autocomplete="email"></label>
+<label>Password <input type="password" name="password" required autocomplete="current-password"></label>
+<button class="btn" type="submit">Log in</button><p class="msg" role="status"></p></form>
+<form id="signupForm" hidden novalidate><label>Full name <input name="name" required autocomplete="name"></label>
+<label>Email <input type="email" name="email" required autocomplete="email"></label>
+<label>Password (min 8 characters) <input type="password" name="password" minlength="8" required autocomplete="new-password"></label>
+<button class="btn" type="submit">Create account</button><p class="msg" role="status"></p></form></div></div></section></main>
+<footer><div class="wrap">© 2026 Hawklyn Tech. All rights reserved.</div></footer>
+<script src="script.js"></script></body></html>
